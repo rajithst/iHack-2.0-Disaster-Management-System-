@@ -14,6 +14,16 @@ class Home extends Frontend_Controller{
 
     }
 
+    /**
+     * @return object
+     */
+    public function registration()
+    {
+        return $this->load->view('registration');
+    }
+
+
+
 }
 
  ?>
