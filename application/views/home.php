@@ -2,7 +2,11 @@
 
     <style>
         #content{width:100%; height:450px; position:relative; background:#99FF33; }
+       div#navbar ul li a {
 
+           color: yellow;
+
+       }
 
     </style>
 </head>

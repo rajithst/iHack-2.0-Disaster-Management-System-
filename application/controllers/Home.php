@@ -22,6 +22,27 @@ class Home extends Frontend_Controller{
         return $this->load->view('registration');
     }
 
+    /**
+     * @return object
+     */
+    public function report()
+    {
+        return $this->load->view('report');
+    }
+
+    public function getall()
+    {
+        $this->load->modal('Test');
+
+        $result = $this->Test->getdata();
+        $this->load->view('home',$this->result);
+
+    }
+
+
+
+
+
 
 
 }
