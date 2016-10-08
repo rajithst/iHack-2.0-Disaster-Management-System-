@@ -44,8 +44,8 @@ class Post extends Admin_Controller {
     public function allposts()
     {
         $this->load->model('Post_d');
-        $resp = $this->Post_d->allposts();
-        $this->load->view('admin/newpost');
+        $data['allposts'] = $this->Post_d->allposts();
+        $this->load->view('admin/posts',$data);
     }
 
 }

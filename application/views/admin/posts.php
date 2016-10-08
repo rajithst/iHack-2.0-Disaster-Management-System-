@@ -75,26 +75,23 @@ include 'components/pagehead.php'; ?>
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="x_panel">
                         <div class="x_title">
-                            <h2>All Messages </h2>
+                            <h2>All Posts </h2>
 
                             <div class="clearfix"></div>
                         </div>
 
                         <div class="x_content">
 
-                            <p>All Messages</p>
+                            <p>All posts</p>
 
                             <div class="table-responsive">
                                 <table class="table table-striped jambo_table bulk_action">
                                     <thead>
                                     <tr class="headings">
 
-                                        <th class="column-title">District </th>
-                                        <th class="column-title">Subcity </th>
-                                        <th class="column-title">Order </th>
-                                        <th class="column-title">Description </th>
-                                        <th class="column-title">Status </th>
-                                        <th class="column-title">Date  </th>
+                                        <th class="column-title">subject </th>
+                                        <th class="column-title">date </th>
+
 
 
                                     </tr>
@@ -104,11 +101,9 @@ include 'components/pagehead.php'; ?>
 
                                     <?php  foreach ($allposts as $posts) {?>
                                         <tr class="even pointer">
-                                            <td class=" "><?php echo $posts->district; ?></td>
-                                            <td class=" "><?php echo $posts->subcity; ?></td>
-                                            <td class=" "><?php echo $posts->description; ?></td>
-                                            <td class=" "><?php /*echo $posts->status; */?></td>
+                                            <td class=" "><?php echo $posts->subjects; ?></td>
                                             <td class=" "><?php echo $posts->date; ?></td>
+
 
 
                                         </tr>
