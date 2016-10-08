@@ -14,7 +14,7 @@
 
            <center><p> Through this form you can report your early warning to us</p></center>
 
-        <form class="form-horizontal">
+        <form class="form-horizontal" method="post" action="">
 
             <div class="form-group">
 
@@ -65,7 +65,7 @@
                     <div class="radio">
                         <label><input type="radio" name="important">Important</label>
                     </div>
-                    <div class="radio disabled">
+                    <div class="radio">
                         <label><input type="radio" name="notimportant">Not Important</label>
                     </div>
                 </div>
@@ -81,14 +81,41 @@
 
             </div>
 
+            <div class="form-group">
+                <label for="upload" class="control-label col-xs-2">Upload Images</label>
+                <div class="col-xs-10">
+                    <label class="control-label">Select Video</label>
+                    <input id="input-1" type="file" class="file">
+                </div>
+
+            </div>
 
 
 
+            <center><div id="map" style="height: 500px; width:70% "></div></center>
+            <script>
+                var map;
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: 7.8731, lng: 80.7718},
+                        zoom: 8
+                    });
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGtu56PVgl9dJd2BVGM80ZqlPRE9Q_beo&callback=initMap"
+                    async defer></script>
+
+
+            <br> <br>
             <div class="form-group">
 
                 <div class="col-xs-offset-2 col-xs-10">
 
-                    <button type="submit" class="btn btn-primary">Login</button>
+                    <center>
+                        <button type="submit" class="btn btn-round btn-success btn-lg">Submit Post</button>
+                        <button type="reset" class="btn btn-round btn-danger btn-lg">Cancel Post</button>
+
+                    </center>
 
                 </div>
 
