@@ -7,10 +7,33 @@
            color: white;
 
        }
+       #logo{
+            width:50px;
+            height:50px;
+            margin-top:-15px;
+        }
 
-    </style>
-</head>
+        .modal-body{
+            height: 175px;
+         }
+         .form-group input{
+            margin-bottom: 4%;
+            width: 100%;
+         }
+         .modal-body button{
+            margin-left: 80px;
+         }
+         .modal-header h4{
+            text-align: center;
+            font-weight: bold;
+         }
 
+</style>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
     </head>
 
     <body>
@@ -26,20 +49,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-globe"></span> Logo</a>
+                <a class="navbar-brand" href="#"><img src="<?php echo base_url('assets/images/logo.png')?>" alt="" id="logo"></a>
             </div>
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
                     <li class="active">
-
                         <a href="#">Home</a>
                     </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                
-                    
+                                       
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News <span class="caret"></span></a>
@@ -52,19 +70,42 @@
                     <li>
                         <a href="#">Report Disasters</a>
                     </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li> 
                 </ul>
-                <!-- Log In Form -->
-                <form class="navbar-form navbar-right form-inline">
-                    <div class="form-group">
-                        <label class="sr-only" for="emailAddress">Email address</label>
-                        <input type="email" class="form-control" id="emailAddress" placeholder="Email">
+                 <ul class="nav navbar-nav navbar-right">
+                      <li><a href="Home/registration"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>          
+                      <li><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" style="cursor: pointer"></span>Login</a></li>
+                </ul>
+                
+                <!--Login form-->
+                <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">LOGIN</h4>
                     </div>
-                    <div class="form-group">
-                        <label class="sr-only" for="pwd">Password</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Password">
-                    </div>
-                    <button type="submit" class="btn btn-default">Sign in</button>
-                </form>
+
+                    <div class="modal-body">
+                      <form class="navbar-form navbar-right form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="emailAddress">Email address</label>
+                            <input type="email" class="form-control" id="emailAddress" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="pwd">Password</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-default">Sign in</button>
+                      </form>
+                    </div>        
+                  </div>
+                </div>
+              </gmp_div()>
+            <!-- /.login form -->
+
 
             </div>
             <!-- /.navbar-collapse -->
@@ -73,23 +114,46 @@
     </nav>
 
     <div class="content">
-
         <img src="<?php echo base_url('assets/images/1.jpg')?>" alt="" style="height: 300px; width: 100%;">
-
-
     </div>
 
     <br>
 
 
 
-    <div class="container-fluid">
+    <div class="container-fluid">     
+        <div class="col-sm-3">
 
+            <!-- List-Group Panel -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h1 class="panel-title"><span class="glyphicon glyphicon-random"></span> Completely Synergize</h1>
+                </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">Resource Taxing</a>
+                    <a href="#" class="list-group-item">Premier Niche Markets <span class="badge">New</span></a>
+                    <a href="#" class="list-group-item">Dynamically Innovate</a>
+                    <a href="#" class="list-group-item">Objectively Innovate</a>
+                    <a href="#" class="list-group-item">Proactively Envisioned</a>
+                </div>
+            </div>
+
+            <!-- Text Panel -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h1 class="panel-title"><span class="glyphicon glyphicon-cog"></span> Dramatically Engage</h1>
+                </div>
+
+                <div class="panel-body">
+                    <p>Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.</p>
+                    <p><button class="btn btn-default">Engage</button></p>
+                </div>
+            </div>
         
-
+        </div>
 
         <!-- Center Column -->
-        <div class="col-sm-8">
+        <div class="col-sm-6">
 
             <!-- Alert -->
             <div class="alert alert-danger alert-dismissible" role="alert">
@@ -165,7 +229,7 @@
 
 
         <!-- Right Column -->
-        <div class="col-sm-4">
+        <div class="col-sm-3">
 
             <!-- Search -->
             <form class="form-inline search" role="search">
