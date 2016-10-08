@@ -17,7 +17,11 @@ class Messages extends Frontend_Controller {
         parent::__construct();
     }
 
-    function allmessages(){
+
+
+
+
+    function index(){
 
         $this->load->model('Messages_d');
         $data['allmsgs'] = $this->Messages_d->getall();

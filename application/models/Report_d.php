@@ -18,12 +18,13 @@ class Report_d extends MY_Model {
     }
 
     public function submitreport(){
-
+        $date       = date("Y/m/d");
         $reportdata = array(
 
             'district' => $this->input->post('dname'),
             'subcity' => $this->input->post('subc'),
-            'description' => $this->input->post('desc')
+            'description' => $this->input->post('desc'),
+            'date'   =>   $date
 
         );
 

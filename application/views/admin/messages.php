@@ -64,3 +64,67 @@ include 'components/pagehead.php'; ?>
         <!-- /top navigation -->
 
         <!-- page content -->
+
+
+        <div class="right_col" role="main">
+            <!-- top tiles -->
+
+            <!-- /top tiles -->
+            <br>
+            <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>All Messages </h2>
+
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="x_content">
+
+                    <p>All Messages</p>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped jambo_table bulk_action">
+                            <thead>
+                            <tr class="headings">
+
+                                <th class="column-title">District </th>
+                                <th class="column-title">Subcity </th>
+                                <th class="column-title">Order </th>
+                                <th class="column-title">Description </th>
+                                <th class="column-title">Status </th>
+                                <th class="column-title">Date  </th>
+
+
+                            </tr>
+                            </thead>
+
+                            <tbody>
+
+                            <?php  foreach ($allmsgs as $msgs) {?>
+                            <tr class="even pointer">
+                                <td class=" "><?php echo $msgs->district; ?></td>
+                                <td class=" "><?php echo $msgs->subcity; ?></td>
+                                <td class=" "><?php echo $msgs->description; ?></td>
+                                <td class=" "><?php /*echo $msgs->status; */?></td>
+                                <td class=" "><?php echo $msgs->date; ?></td>
+
+
+                            </tr>
+                            <?php } ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <?php include "components/footer.php";?>
+            <!-- /footer content -->
+        </div>
+    </div>
+
+
+    <?php include "components/pagetail.php";?>
