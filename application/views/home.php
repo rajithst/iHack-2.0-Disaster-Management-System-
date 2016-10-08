@@ -2,7 +2,7 @@
 
     <style>
         #content{width:100%; height:450px; position:relative; background:#99FF33; }
-       div#navbar ul li a {
+       #navbar ul li a {
 
            color: white;
 
@@ -62,9 +62,9 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News <span class="caret"></span></a>
                         <ul class="dropdown-menu" aria-labelledby="about-us">
-                            <li><a href="#">Engage</a></li>
-                            <li><a href="#">Pontificate</a></li>
-                            <li><a href="#">Synergize</a></li>
+                            <li><a href="#">Flood</a></li>
+                            <li><a href="#">Drought</a></li>
+                            <li><a href="#">Landslip</a></li>
                         </ul>
                     </li>
                     <li>
@@ -76,10 +76,10 @@
                 </ul>
                  <ul class="nav navbar-nav navbar-right">
                       <li><a href="Home/registration"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>          
-                      <li><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" style="cursor: pointer"></span>Login</a></li>
+                      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
                 </ul>
                 
-                <!--Login form-->
+                <!--Login form
                 <div class="modal fade" id="myModal" role="dialog">
                 <div class="modal-dialog modal-sm">
                   <div class="modal-content">
@@ -104,7 +104,7 @@
                   </div>
                 </div>
               </div>
-            <!-- /.login form -->
+            /.login form -->
 
 
             </div>
@@ -125,19 +125,7 @@
     <div class="container-fluid">     
         <div class="col-sm-3">
 
-            <!-- List-Group Panel -->
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h1 class="panel-title"><span class="glyphicon glyphicon-random"></span> Completely Synergize</h1>
-                </div>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Resource Taxing</a>
-                    <a href="#" class="list-group-item">Premier Niche Markets <span class="badge">New</span></a>
-                    <a href="#" class="list-group-item">Dynamically Innovate</a>
-                    <a href="#" class="list-group-item">Objectively Innovate</a>
-                    <a href="#" class="list-group-item">Proactively Envisioned</a>
-                </div>
-            </div>
+            
 
             <!-- Text Panel -->
             <div class="panel panel-default">
@@ -148,6 +136,20 @@
                 <div class="panel-body">
                     <p>Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.</p>
                     <p><button class="btn btn-default">Engage</button></p>
+                </div>
+            </div>
+
+            <!-- List-Group Panel -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h1 class="panel-title"><span class="glyphicon glyphicon-link"></span> Important Links</h1>
+                </div>
+                <div class="list-group">
+                    <a target="_blank" href="http://www.meteo.gov.lk/"><img width="268" height="45" src="<?php echo base_url('assets/images/mete.png'); ?>" alt=""/></a>
+
+                    <a href="http://www.dmc.gov.lk/" target="_blank"><img width="268" height="45" src="<?php echo base_url('assets/images/disaster.png'); ?>" alt="" /></a><br />
+
+                    <a href="http://www.ndrsc.gov.lk" target="_blank"><img width="268" height="45" src="<?php echo base_url('assets/images/service.png'); ?>" alt="" /></a>
                 </div>
             </div>
         
@@ -197,7 +199,7 @@
         <!-- Right Column -->
         <div class="col-sm-3">
 
-            <!-- Search -->
+            <!-- Search
             <form class="form-inline search" role="search">
                 <div class="form-group">
                     <input type="text" class="form-control">
@@ -205,7 +207,7 @@
                 <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Search</button>
             </form>
 
-            <!-- Progress Bars -->
+            Progress Bars -->
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">
