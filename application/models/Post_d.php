@@ -49,6 +49,16 @@ class Post_d extends MY_Model {
 
     }
 
+    public function allposts(){
+
+        $sql = "SELECT * FROM posts ORDER BY id DESC;";
+        $query = $this->db->query($sql);
+        return $query->result();
+
+
+
+    }
+
 
 
 
