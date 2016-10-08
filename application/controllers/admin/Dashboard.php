@@ -19,10 +19,7 @@ class Dashboard extends Admin_Controller{
     }
 
 
-    public function newpost()
-    {
-        $this->load->view('admin/newpost');
-    }
+
 
 
 

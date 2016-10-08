@@ -35,4 +35,17 @@ class Post extends Admin_Controller {
 
     }
 
+    public function newpost()
+    {
+        $this->load->view('admin/newpost');
+    }
+
+
+    public function allposts()
+    {
+        $this->load->model('Post_d');
+        $resp = $this->Post_d->allposts();
+        $this->load->view('admin/newpost');
+    }
+
 }

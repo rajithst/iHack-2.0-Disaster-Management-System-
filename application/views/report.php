@@ -1,8 +1,118 @@
 <?php include 'components/page_head.php'?>
 
+
+<style>
+    #content{width:100%; height:450px; position:relative; background:#99FF33; }
+    div#navbar ul li a {
+
+        color: white;
+
+    }
+    #logo{
+        width:50px;
+        height:50px;
+        margin-top:-15px;
+    }
+
+    .modal-body{
+        height: 175px;
+    }
+    .form-group input{
+        margin-bottom: 4%;
+        width: 100%;
+    }
+    .modal-body button{
+        margin-left: 80px;
+    }
+    .modal-header h4{
+        text-align: center;
+        font-weight: bold;
+    }
+
+</style>
+
 </head>
 
+
+
+
+
 <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Logo and responsive toggle -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="<?php echo base_url('assets/images/logo.png'); ?>" alt="" id="logo"></a>
+        </div>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="<?php echo base_url('index.php/Home'); ?>">Home</a>
+                </li>
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News <span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="about-us">
+                        <li><a href="#">Engage</a></li>
+                        <li><a href="#">Pontificate</a></li>
+                        <li><a href="#">Synergize</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="<?php echo base_url('index.php/Home/report'); ?>">Report Disasters</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="Home/registration"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" style="cursor: pointer"></span>Login</a></li>
+            </ul>
+
+            <!--Login form-->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">LOGIN</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <form class="navbar-form navbar-right form-inline">
+                                <div class="form-group">
+                                    <label class="sr-only" for="emailAddress">Email address</label>
+                                    <input type="email" class="form-control" id="emailAddress" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="pwd">Password</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-default">Sign in</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.login form -->
+
+
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
 
 <div class="container">
     <div class="row">

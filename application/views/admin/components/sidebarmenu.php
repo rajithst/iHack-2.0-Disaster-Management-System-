@@ -2,13 +2,13 @@
     <div class="menu_section">
         <h3>General</h3>
         <ul class="nav side-menu">
-            <li><a><i class="fa fa-home"></i> Home</span></a></li>
+            <li><a href="<?php echo base_url('index.php/admin/Dashboard'); ?>"><i class="fa fa-home"></i> Home</span></a></li>
 
 
             <li><a><i class="fa fa-edit"></i> Posts <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="form.html">All Post</a></li>
-                    <li><a href="form_advanced.html">New Post</a></li>
+                    <li><a href="<?php echo base_url('index.php/admin/Post/newpost'); ?>">New Post</a></li>
                     <li><a href="form_validation.html">Draft</a></li>
 
                 </ul>
@@ -17,7 +17,7 @@
                 <ul class="nav child_menu">
                     <li><a href="general_elements.html">Important</a></li>
                     <li><a href="media_gallery.html">Media Gallery</a></li>
-                    <li><a href="media_gallery.html">All message</a></li>
+                    <li><a href="<?php echo base_url('index.php/admin/Messages'); ?>">All message</a></li>
 
                 </ul>
             </li>

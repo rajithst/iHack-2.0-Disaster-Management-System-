@@ -55,7 +55,7 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="#">Home</a>
+                        <a href="<?php echo base_url('index.php/Home'); ?>">Home</a>
                     </li>
                                        
 
@@ -68,7 +68,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Report Disasters</a>
+                        <a href="<?php echo base_url('index.php/Home/report'); ?>">Report Disasters</a>
                     </li>
                     <li>
                         <a href="#">About Us</a>
@@ -114,7 +114,7 @@
     </nav>
 
     <div class="content">
-        <img src="<?php echo base_url('assets/images/homeimage.jpg'); ?>" alt="" style="height: 300px; width: 100%;">
+        <img src="<?php echo base_url('assets/images/homeImage.jpg'); ?>" alt="" style="height: 300px; width: 100%;">
 
     </div>
 
