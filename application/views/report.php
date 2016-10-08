@@ -14,7 +14,7 @@
 
            <center><p> Through this form you can report your early warning to us</p></center>
 
-        <form class="form-horizontal" method="post" action="">
+        <form class="form-horizontal" method="post" action="<?php echo base_url('index.php/Report/setreport');?>">
 
             <div class="form-group">
 
@@ -22,11 +22,11 @@
 
                 <div class="col-xs-8">
 
-                    <select id="districtname" class="dd">
+                    <select id="districtname" name="dname">
                         <option value="">---- Select District -----</option>
-                        <option value="">colombo</option>
-                        <option value="">galle</option>
-                        <option value="">matara</option>
+                        <option value="Colombo">Colombo</option>
+                        <option value="Galle">Galle</option>
+                        <option value="Matara">Matara</option>
 
                     </select>
 
@@ -41,7 +41,7 @@
 
                 <div class="col-xs-10">
 
-                    <input type="subcity" class="form-control" id="subcity" placeholder="Sub City">
+                    <input type="text" class="form-control" id="subcity" placeholder="Sub City" name="subc">
 
                 </div>
 
@@ -51,7 +51,7 @@
             <div class="form-group">
                 <label for="comment" class="control-label col-xs-2">Description</label>
                 <div class="col-xs-10">
-                <textarea class="form-control" rows="5" id="comment"></textarea>
+                <textarea class="form-control" rows="5" id="comment" name="desc"></textarea>
                     </div>
             </div>
 
@@ -98,7 +98,7 @@
                 function initMap() {
                     map = new google.maps.Map(document.getElementById('map'), {
                         center: {lat: 7.8731, lng: 80.7718},
-                        zoom: 8
+                        zoom: 10
                     });
                 }
             </script>
