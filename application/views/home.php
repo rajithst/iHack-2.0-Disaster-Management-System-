@@ -114,7 +114,8 @@
     </nav>
 
     <div class="content">
-        <img src="<?php echo base_url('assets/images/1.jpg'); ?>" alt="" style="height: 300px; width: 100%;">
+        <img src="<?php echo base_url('assets/images/homeimage.jpg'); ?>" alt="" style="height: 300px; width: 100%;">
+
     </div>
 
     <br>
