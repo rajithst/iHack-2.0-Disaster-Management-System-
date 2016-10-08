@@ -4,7 +4,7 @@
         #content{width:100%; height:450px; position:relative; background:#99FF33; }
        div#navbar ul li a {
 
-           color: yellow;
+           color: white;
 
        }
 
@@ -36,18 +36,21 @@
                         <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#">About Us</a>
                     </li>
-                    <li>
-                        <a href="#">Products</a>
-                    </li>
+                
+                    
+
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News <span class="caret"></span></a>
                         <ul class="dropdown-menu" aria-labelledby="about-us">
                             <li><a href="#">Engage</a></li>
                             <li><a href="#">Pontificate</a></li>
                             <li><a href="#">Synergize</a></li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="#">Report Disasters</a>
                     </li>
                 </ul>
                 <!-- Log In Form -->
@@ -82,40 +85,11 @@
 
     <div class="container-fluid">
 
-        <!-- Left Column -->
-        <div class="col-sm-3">
-
-            <!-- List-Group Panel -->
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h1 class="panel-title"><span class="glyphicon glyphicon-random"></span> Completely Synergize</h1>
-                </div>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Resource Taxing</a>
-                    <a href="#" class="list-group-item">Premier Niche Markets <span class="badge">New</span></a>
-                    <a href="#" class="list-group-item">Dynamically Innovate</a>
-                    <a href="#" class="list-group-item">Objectively Innovate</a>
-                    <a href="#" class="list-group-item">Proactively Envisioned</a>
-                </div>
-            </div>
-
-            <!-- Text Panel -->
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h1 class="panel-title"><span class="glyphicon glyphicon-cog"></span> Dramatically Engage</h1>
-                </div>
-
-                <div class="panel-body">
-                    <p>Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.</p>
-                    <p><button class="btn btn-default">Engage</button></p>
-                </div>
-            </div>
-
-        </div><!--/Left Column-->
+        
 
 
         <!-- Center Column -->
-        <div class="col-sm-6">
+        <div class="col-sm-8">
 
             <!-- Alert -->
             <div class="alert alert-danger alert-dismissible" role="alert">
@@ -191,7 +165,7 @@
 
 
         <!-- Right Column -->
-        <div class="col-sm-3">
+        <div class="col-sm-4">
 
             <!-- Search -->
             <form class="form-inline search" role="search">
