@@ -10,7 +10,9 @@ class Home extends Frontend_Controller{
 
     public function index(){
 
-        $this->load->view('home');
+        $this->load->model('Post_d');
+        $data['postdata']=$this->Post_d->viewall();
+        $this->load->view('home',$data);
 
     }
 

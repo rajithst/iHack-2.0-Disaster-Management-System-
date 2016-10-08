@@ -1,4 +1,4 @@
-<?php include 'components/page_head.php'?>
+<?php include 'components/page_head.php'; ?>
 
     <style>
         #content{width:100%; height:450px; position:relative; background:#99FF33; }
@@ -49,7 +49,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="<?php echo base_url('assets/images/logo.png')?>" alt="" id="logo"></a>
+                <a class="navbar-brand" href="#"><img src="<?php echo base_url('assets/images/logo.png'); ?>" alt="" id="logo"></a>
             </div>
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbar">
@@ -103,7 +103,7 @@
                     </div>        
                   </div>
                 </div>
-              </gmp_div()>
+              </div>
             <!-- /.login form -->
 
 
@@ -114,7 +114,7 @@
     </nav>
 
     <div class="content">
-        <img src="<?php echo base_url('assets/images/1.jpg')?>" alt="" style="height: 300px; width: 100%;">
+        <img src="<?php echo base_url('assets/images/1.jpg'); ?>" alt="" style="height: 300px; width: 100%;">
     </div>
 
     <br>
@@ -162,7 +162,11 @@
             </div>
 
             <!-- Articles -->
+
+
             <div class="row">
+
+               <?php foreach ($postdata as $data) { ?>
                 <article class="col-xs-12">
                     <div class="media">
                         <div class="media-left">
@@ -171,60 +175,21 @@
                             </a>
                         </div>
                         <div class="media-body">
-                            <h2 class="media-heading"><a href="#">Premier Niche Markets</a></h2>
-                            <p>Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
+                            <h2 class="media-heading"><a href="#"><?php echo  $data->subjects; ?></a></h2>
+                            <p><?php echo $data->content; ?></p>
 
                             <ul class="list-inline">
                                 <li><a href="#"><span class="glyphicon glyphicon-comment"></span> 2 Comments</a></li>
                                 <li><a href="#"><span class="glyphicon glyphicon-share"></span> 8 Shares</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-"></span> <?php echo  $data->date; ?></a></li>
                             </ul>
                         </div>
                     </div>
                 </article>
+    <?php } ?>
             </div>
             <hr>
-            <div class="row">
-                <article class="col-xs-12">
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#">
-                                <img class="media-object" src="holder.js/120x120" alt="">
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h2 class="media-heading"><a href="#">Proactively Envisioned</a></h2>
-                            <p>Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products. Proactively envisioned multimedia based expertise and cross-media growth strategies.</p>
 
-                            <ul class="list-inline">
-                                <li><a href="#"><span class="glyphicon glyphicon-comment"></span> 12 Comments</a></li>
-                                <li><a href="#"><span class="glyphicon glyphicon-share"></span> 18 Shares</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <hr>
-            <div class="row">
-                <article class="col-xs-12">
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#">
-                                <img class="media-object" src="holder.js/120x120" alt="">
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h2 class="media-heading"><a href="#">Completely Synergize</a></h2>
-                            <p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
-
-                            <ul class="list-inline">
-                                <li><a href="#"><span class="glyphicon glyphicon-comment"></span> 23 Comments</a></li>
-                                <li><a href="#"><span class="glyphicon glyphicon-share"></span> 22 Shares</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <hr>
         </div><!--/Center Column-->
 
 
@@ -361,4 +326,4 @@
 
 
 
-<?php include 'components/page_tail.php'?>
+<?php include 'components/page_tail.php'; ?>
