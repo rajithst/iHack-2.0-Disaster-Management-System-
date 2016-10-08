@@ -19,7 +19,7 @@ class Messages_d extends MY_Model {
 
     public function getall(){
 
-        $sql = "SELECT * FROM report";
+        $sql = "SELECT * FROM report ORDER BY id DESC ";
         $query = $this->db->query($sql);
         return $query->result();
 
