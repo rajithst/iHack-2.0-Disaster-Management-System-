@@ -67,6 +67,7 @@
                             <li><a href="#">Landslip</a></li>
                         </ul>
                     </li>
+
                     <li>
                         <a href="<?php echo base_url('index.php/Home/report'); ?>">Report Disasters</a>
                     </li>
@@ -149,7 +150,11 @@
 
                     <a href="http://www.dmc.gov.lk/" target="_blank"><img width="268" height="45" src="<?php echo base_url('assets/images/disaster.png'); ?>" alt="" /></a><br />
 
+                    <a href="http://www.sarvodaya.org/" target="_blank"><img width="268" height="45" src="<?php echo base_url('assets/images/sarvodaya.png'); ?>" alt="" /></a>
+
                     <a href="http://www.ndrsc.gov.lk" target="_blank"><img width="268" height="45" src="<?php echo base_url('assets/images/service.png'); ?>" alt="" /></a>
+
+
                 </div>
             </div>
         
@@ -158,13 +163,13 @@
         <!-- Center Column -->
         <div class="col-sm-6">
 
-            <!-- Alert -->
+            <!-- Alert
             <div class="alert alert-danger alert-dismissible" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <strong>Synergize:</strong> Seamlessly visualize quality intellectual capital!
             </div>
 
-            <!-- Articles -->
+            Articles -->
 
 
             <div class="row">
@@ -211,33 +216,38 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">
-                        <span class="glyphicon glyphicon-scale"></span>
-                        Dramatically Engage
+                        <span class="glyphicon glyphicon-alert"></span>
+                        Affected Areas
                     </h3>
                 </div>
                 <div class="panel-body">
+                    Kegalle
                     <div class="progress">
-                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100"
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100"
                              aria-valuemin="0" aria-valuemax="100" style="width:100%">
-                            100% Proactively Envisioned
+                            100% Affected
                         </div>
                     </div>
+                    Kelaniya
                     <div class="progress">
-                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80"
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80"
                              aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                            80% Objectively Innovated
+                            80% Affected
                         </div>
                     </div>
+
+                    Peradeniya
                     <div class="progress">
-                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="45"
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="45"
                              aria-valuemin="0" aria-valuemax="100" style="width:45%">
-                            45% Portalled
+                            45% Affected
                         </div>
                     </div>
+                    Ratnapura
                     <div class="progress">
-                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="35"
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="35"
                              aria-valuemin="0" aria-valuemax="100" style="width:35%">
-                            35% Done
+                            35% Affected
                         </div>
                     </div>
                 </div>
