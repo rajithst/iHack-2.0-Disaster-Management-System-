@@ -133,18 +133,7 @@
 
             
 
-            <!-- Text Panel -->
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h1 class="panel-title"><span class="glyphicon glyphicon-cog"></span> Dramatically Engage</h1>
-                </div>
-
-                <div class="panel-body">
-                    <p>Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.</p>
-                    <p><button class="btn btn-default">Engage</button></p>
-                </div>
-            </div>
-
+            
             <!-- List-Group Panel -->
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -159,13 +148,7 @@
 
                     <a href="http://www.ndrsc.gov.lk" target="_blank"><img width="300" height="45" src="<?php echo base_url('assets/images/service.png'); ?>" alt="" /></a>
 
-<<<<<<< HEAD
 
-=======
-                    <a href="http://www.dmc.gov.lk/" target="_blank"><img width="268" height="45" src="<?php echo base_url('assets/images/disaster.PNG'); ?>" alt="" /></a><br />
-
-                    <a href="http://www.ndrsc.gov.lk" target="_blank"><img width="268" height="45" src="<?php echo base_url('assets/images/service.PNG'); ?>" alt="" /></a>
->>>>>>> 024adba01a04c30df9e07c152cc48c492ba497e4
                 </div>
             </div>
         
@@ -302,7 +285,7 @@
         <div class="small-print">
             <div class="container">
                 <p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
-                <p>Copyright &copy; Example.com 2015 </p>
+                <p>Copyright &copy; disastercare.lk 2016 </p>
             </div>
         </div>
     </footer>
