@@ -199,7 +199,7 @@
                         <label><input type="radio" name="important">Important</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="notimportant">Not Important</label>
+                        <label><input type="radio" name="notimportant">Least Important</label>
                     </div>
                 </div>
 

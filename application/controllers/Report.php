@@ -22,6 +22,7 @@ class Report extends Frontend_Controller {
     function setreport(){
         $this->load->model('Report_d');
         $this->Report_d->submitreport();
+        $this->load->view('report');
 
 
     }

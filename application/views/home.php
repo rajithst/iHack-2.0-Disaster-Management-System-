@@ -153,19 +153,17 @@
                 <div class="list-group">
                     <a target="_blank" href="http://www.meteo.gov.lk/"><img width="300" height="45" src="<?php echo base_url('assets/images/mete.png'); ?>" alt=""/></a>
 
-                    <a href="http://www.dmc.gov.lk/" target="_blank"><img width="300" height="45" src="<?php echo base_url('assets/images/disaster.png'); ?>" alt="" /></a><br />
+                    <a href="http://www.dmc.gov.lk/" target="_blank"><img width="300" height="45" src="<?php echo base_url('assets/images/disaster.PNG'); ?>" alt="" /></a><br />
 
-                    <a href="http://www.sarvodaya.org/" target="_blank"><img width="300" height="45" src="<?php echo base_url('assets/images/sarvodaya.png'); ?>" alt="" /></a>
+                    <a href="http://www.sarvodaya.org/" target="_blank"><img width="300" height="45" src="<?php echo base_url('assets/images/sarvodaya.PNG'); ?>" alt="" /></a>
 
-                    <a href="http://www.ndrsc.gov.lk" target="_blank"><img width="300" height="45" src="<?php echo base_url('assets/images/service.png'); ?>" alt="" /></a>
+                    <a href="http://www.ndrsc.gov.lk" target="_blank"><img width="300" height="45" src="<?php echo base_url('assets/images/service.PNG'); ?>" alt="" /></a>
 
-<<<<<<< HEAD
 
-=======
                     <a href="http://www.dmc.gov.lk/" target="_blank"><img width="268" height="45" src="<?php echo base_url('assets/images/disaster.PNG'); ?>" alt="" /></a><br />
 
                     <a href="http://www.ndrsc.gov.lk" target="_blank"><img width="268" height="45" src="<?php echo base_url('assets/images/service.PNG'); ?>" alt="" /></a>
->>>>>>> 024adba01a04c30df9e07c152cc48c492ba497e4
+
                 </div>
             </div>
         

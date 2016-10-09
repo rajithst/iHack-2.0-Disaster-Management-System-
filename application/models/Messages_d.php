@@ -24,4 +24,7 @@ class Messages_d extends MY_Model {
         return $query->result();
 
     }
+
+
+
 }
