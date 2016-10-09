@@ -28,11 +28,15 @@
             font-weight: bold;
          }
 
+        #map_wrapper {
+            height: 500px;
+        }
+
+
+
 </style>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGtu56PVgl9dJd2BVGM80ZqlPRE9Q_beo&callback=initMap"
-            async defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="<?php echo base_url('assets/plugins/mplace/mplace.js'); ?>"></script>
+
+<?php echo $map['js']; ?>
 
         
     </head>
@@ -155,7 +159,13 @@
 
                     <a href="http://www.ndrsc.gov.lk" target="_blank"><img width="300" height="45" src="<?php echo base_url('assets/images/service.png'); ?>" alt="" /></a>
 
+<<<<<<< HEAD
 
+=======
+                    <a href="http://www.dmc.gov.lk/" target="_blank"><img width="268" height="45" src="<?php echo base_url('assets/images/disaster.PNG'); ?>" alt="" /></a><br />
+
+                    <a href="http://www.ndrsc.gov.lk" target="_blank"><img width="268" height="45" src="<?php echo base_url('assets/images/service.PNG'); ?>" alt="" /></a>
+>>>>>>> 024adba01a04c30df9e07c152cc48c492ba497e4
                 </div>
             </div>
         
@@ -180,7 +190,8 @@
                     <div class="media">
                         <div class="media-left">
                             <a href="#">
-                                <img class="media-object" src="holder.js/120x120" alt="">
+
+
                             </a>
                         </div>
                         <div class="media-body">
@@ -279,15 +290,13 @@
 
     <footer>
         <div class="footer-blurb">
-            <div class="container">
+
                 <div class="row">
-
-                    <div id="gmap" style="with:300px;height:250px;"></div>
-
-                    <div id="controls"></div>
+                    <div id="map_wrapper" style="width: 100%; margin: 0; height:500px">
+                        <?php echo $map['html']; ?>
+                    </div>
                 </div>
-                <!-- /.row -->
-            </div>
+
         </div>
 
         <div class="small-print">
@@ -301,10 +310,3 @@
 
 
 <?php include 'components/page_tail.php'; ?>
-
-    <script>
-
-        var maplace = new Maplace();
-        maplace.Load();
-
-    </script>
