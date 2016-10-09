@@ -91,10 +91,11 @@ include 'components/pagehead.php'; ?>
 
                                 <th class="column-title">District </th>
                                 <th class="column-title">Subcity </th>
-                                <th class="column-title">Order </th>
+                                <!--<th class="column-title">Order </th>-->
                                 <th class="column-title">Description </th>
                                 <th class="column-title">Status </th>
                                 <th class="column-title">Date  </th>
+                                <th class="column-title">Delete</th>
 
 
                             </tr>
@@ -109,6 +110,7 @@ include 'components/pagehead.php'; ?>
                                 <td class=" "><?php echo $msgs->description; ?></td>
                                 <td class=" "><?php /*echo $msgs->status; */?></td>
                                 <td class=" "><?php echo $msgs->date; ?></td>
+                                <td class=" "><button class="btn btn-danger">Delete</button></td>
 
 
                             </tr>

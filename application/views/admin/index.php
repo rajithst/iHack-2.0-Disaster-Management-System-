@@ -31,20 +31,6 @@ include 'components/pagehead.php'; ?>
             <?php include 'components/sidebarmenu.php'?>
             <!-- /sidebar menu -->
 
-            <div class="sidebar-footer hidden-small">
-              <a data-toggle="tooltip" data-placement="top" title="Settings">
-                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="Lock">
-                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="Logout">
-                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-              </a>
-            </div>
             <!-- /menu footer buttons -->
           </div>
         </div>
@@ -64,12 +50,12 @@ include 'components/pagehead.php'; ?>
             </div>
             <div class="col-md-4 col-sm-4 col-xs-6 tile_stats_count">
               <span class="count_top"><i class="fa fa-user"></i> Registred Users</span>
-              <div class="count">12350</div>
+              <div class="count">1235</div>
 
             </div>
             <div class="col-md-4 col-sm-4 col-xs-6 tile_stats_count">
               <span class="count_top"><i class="fa fa-commenting-o"></i> Ergent Messages</span>
-              <div class="count green">2,500</div>
+              <div class="count green">500</div>
 
             </div>
           </div>

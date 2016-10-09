@@ -29,4 +29,23 @@ class Messages extends Frontend_Controller {
         $this->load->view('admin/messages',$data);
 
     }
+
+
+    function sms(){
+
+
+        $this->load->view('admin/sms');
+
+    }
+
+    function sendsms(){
+
+        $this->load->model('Messages_d');
+        $this->Messages_d->sendsmsto();
+
+    }
+
+
+
+
 }

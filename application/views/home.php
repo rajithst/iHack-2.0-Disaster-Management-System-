@@ -142,13 +142,21 @@
                 <div class="list-group">
                     <a target="_blank" href="http://www.meteo.gov.lk/"><img width="300" height="45" src="<?php echo base_url('assets/images/mete.png'); ?>" alt=""/></a>
 
-                    <a href="http://www.dmc.gov.lk/" target="_blank"><img width="300" height="45" src="<?php echo base_url('assets/images/disaster.png'); ?>" alt="" /></a><br />
+                    <a href="http://www.dmc.gov.lk/" target="_blank"><img width="300" height="45" src="<?php echo base_url('assets/images/disaster.PNG'); ?>" alt="" /></a><br />
 
-                    <a href="http://www.sarvodaya.org/" target="_blank"><img width="300" height="45" src="<?php echo base_url('assets/images/sarvodaya.png'); ?>" alt="" /></a>
+                    <a href="http://www.sarvodaya.org/" target="_blank"><img width="300" height="45" src="<?php echo base_url('assets/images/sarvodaya.PNG'); ?>" alt="" /></a>
 
-                    <a href="http://www.ndrsc.gov.lk" target="_blank"><img width="300" height="45" src="<?php echo base_url('assets/images/service.png'); ?>" alt="" /></a>
+                    <a href="http://www.ndrsc.gov.lk" target="_blank"><img width="300" height="45" src="<?php echo base_url('assets/images/service.PNG'); ?>" alt="" /></a>
 
+<<<<<<< HEAD
 
+=======
+
+                    <a href="http://www.dmc.gov.lk/" target="_blank"><img width="268" height="45" src="<?php echo base_url('assets/images/disaster.PNG'); ?>" alt="" /></a><br />
+
+                    <a href="http://www.ndrsc.gov.lk" target="_blank"><img width="268" height="45" src="<?php echo base_url('assets/images/service.PNG'); ?>" alt="" /></a>
+
+>>>>>>> 47d6b7fd36e03fda317fe0717422cae9b457ac59
                 </div>
             </div>
         
@@ -274,6 +282,7 @@
     <footer>
         <div class="footer-blurb">
 
+            <center><h2>Currently Affected Areas</h2></center>
                 <div class="row">
                     <div id="map_wrapper" style="width: 100%; margin: 0; height:500px">
                         <?php echo $map['html']; ?>
@@ -285,7 +294,11 @@
         <div class="small-print">
             <div class="container">
                 <p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+<<<<<<< HEAD
                 <p>Copyright &copy; disastercare.lk 2016 </p>
+=======
+                <p>Copyright &copy; Disastercare.com 2016 </p>
+>>>>>>> 47d6b7fd36e03fda317fe0717422cae9b457ac59
             </div>
         </div>
     </footer>

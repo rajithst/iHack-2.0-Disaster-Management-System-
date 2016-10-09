@@ -84,6 +84,7 @@ include 'components/pagehead.php'; ?>
 
                                         <th class="column-title">subject </th>
                                         <th class="column-title">date </th>
+                                        <th class="column-title">Delete</th>
 
 
 
@@ -96,6 +97,7 @@ include 'components/pagehead.php'; ?>
                                         <tr class="even pointer">
                                             <td class=" "><?php echo $posts->subjects; ?></td>
                                             <td class=" "><?php echo $posts->date; ?></td>
+                                            <td class=" "><button class="btn btn-danger">Delete</button></td>
 
 
 
