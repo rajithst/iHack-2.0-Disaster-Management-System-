@@ -26,11 +26,7 @@ class Post extends Admin_Controller {
         $this->load->model('Post_d');
         $resp = $this->Post_d->postdata();
 
-        if ($resp == true) {
-
-
-
-        }
+        $this->load->view('admin/newpost');
 
 
     }
