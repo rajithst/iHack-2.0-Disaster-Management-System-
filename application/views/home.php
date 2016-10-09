@@ -275,6 +275,7 @@
     <footer>
         <div class="footer-blurb">
 
+            <center><h2>Currently Affected Areas</h2></center>
                 <div class="row">
                     <div id="map_wrapper" style="width: 100%; margin: 0; height:500px">
                         <?php echo $map['html']; ?>
@@ -286,7 +287,7 @@
         <div class="small-print">
             <div class="container">
                 <p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
-                <p>Copyright &copy; Example.com 2015 </p>
+                <p>Copyright &copy; Disastercare.com 2016 </p>
             </div>
         </div>
     </footer>

@@ -8,6 +8,17 @@ include 'components/pagehead.php'; ?>
     });
 
 
+
+
+
+    $(function () {
+
+        $("#compose-textarea").wysihtml5();
+    });
+
+
+
+
 </script>
 
 
@@ -64,62 +75,60 @@ include 'components/pagehead.php'; ?>
         <!-- /top navigation -->
 
         <!-- page content -->
-
-
         <div class="right_col" role="main">
             <!-- top tiles -->
 
             <!-- /top tiles -->
             <br>
             <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="x_panel">
-                <div class="x_title">
-                    <h2>All Messages </h2>
 
-                    <div class="clearfix"></div>
-                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="x_panel">
+                        <div class="x_title">
+                            <h2>Compose a new post</h2>
 
-                <div class="x_content">
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+                            <div id="alerts"></div>
 
-                    <p>All Messages</p>
+                            <form action="<?php echo base_url('index.php/admin/Post/setpost');?>" method="post">
 
-                    <div class="table-responsive">
-                        <table class="table table-striped jambo_table bulk_action">
-                            <thead>
-                            <tr class="headings">
-
-                                <th class="column-title">District </th>
-                                <th class="column-title">Subcity </th>
-                                <!--<th class="column-title">Order </th>-->
-                                <th class="column-title">Description </th>
-                                <th class="column-title">Status </th>
-                                <th class="column-title">Date  </th>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject" name="subject">
+                                </div>
 
 
-                            </tr>
-                            </thead>
-
-                            <tbody>
-
-                            <?php  foreach ($allmsgs as $msgs) {?>
-                            <tr class="even pointer">
-                                <td class=" "><?php echo $msgs->district; ?></td>
-                                <td class=" "><?php echo $msgs->subcity; ?></td>
-                                <td class=" "><?php echo $msgs->description; ?></td>
-                                <td class=" "><?php /*echo $msgs->status; */?></td>
-                                <td class=" "><?php echo $msgs->date; ?></td>
+                                <div class="form-group">
+                                    <label for="txt">Post Content</label>
+                                    <textarea class="form-control" rows="5" id="compose-textarea" style="width: 100%; height: 300px;" name="content"></textarea>
+                                </div>
 
 
-                            </tr>
-                            <?php } ?>
-                            </tbody>
-                        </table>
+                                <br> <br>
+
+                                <center>
+                                    <button type="submit" class="btn btn-round btn-success btn-lg">Submit Post</button>
+                                    <button type="reset" class="btn btn-round btn-danger btn-lg">Cancel Post</button>
+
+                                </center>
+
+
+
+                            </form>
+                            <br />
+
+                            <div class="ln_solid"></div>
+
+                        </div>
                     </div>
                 </div>
+
+
+
+
             </div>
-        </div>
-    </div>
 
             <?php include "components/footer.php";?>
             <!-- /footer content -->
@@ -128,3 +137,7 @@ include 'components/pagehead.php'; ?>
 
 
     <?php include "components/pagetail.php";?>
+
+
+
+    https://rest.nexmo.com/sms/json?api_key=d2180e2b&api_secret=41d4e0e4e762030f&from=NEXMO&to=94715136507&text=Welcome+to+Nexmo+test+from+homi
