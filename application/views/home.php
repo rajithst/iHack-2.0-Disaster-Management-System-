@@ -63,9 +63,9 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News <span class="caret"></span></a>
                         <ul class="dropdown-menu" aria-labelledby="about-us">
-                            <li><a href="#">Flood</a></li>
-                            <li><a href="#">Drought</a></li>
-                            <li><a href="#">Landslip</a></li>
+                            <li><a href="#"><font color="black">Flood</font></a></li>
+                            <li><a href="#"><font color="black">Drought</font></a></li>
+                            <li><a href="#"><font color="black">Landslip</font></a></li>
                         </ul>
                     </li>
 
@@ -147,13 +147,13 @@
                     <h1 class="panel-title"><span class="glyphicon glyphicon-link"></span> Important Links</h1>
                 </div>
                 <div class="list-group">
-                    <a target="_blank" href="http://www.meteo.gov.lk/"><img width="268" height="45" src="<?php echo base_url('assets/images/mete.png'); ?>" alt=""/></a>
+                    <a target="_blank" href="http://www.meteo.gov.lk/"><img width="300" height="45" src="<?php echo base_url('assets/images/mete.png'); ?>" alt=""/></a>
 
-                    <a href="http://www.dmc.gov.lk/" target="_blank"><img width="268" height="45" src="<?php echo base_url('assets/images/disaster.png'); ?>" alt="" /></a><br />
+                    <a href="http://www.dmc.gov.lk/" target="_blank"><img width="300" height="45" src="<?php echo base_url('assets/images/disaster.png'); ?>" alt="" /></a><br />
 
-                    <a href="http://www.sarvodaya.org/" target="_blank"><img width="268" height="45" src="<?php echo base_url('assets/images/sarvodaya.png'); ?>" alt="" /></a>
+                    <a href="http://www.sarvodaya.org/" target="_blank"><img width="300" height="45" src="<?php echo base_url('assets/images/sarvodaya.png'); ?>" alt="" /></a>
 
-                    <a href="http://www.ndrsc.gov.lk" target="_blank"><img width="268" height="45" src="<?php echo base_url('assets/images/service.png'); ?>" alt="" /></a>
+                    <a href="http://www.ndrsc.gov.lk" target="_blank"><img width="300" height="45" src="<?php echo base_url('assets/images/service.png'); ?>" alt="" /></a>
 
 
                 </div>
@@ -254,7 +254,7 @@
                 </div>
             </div>
 
-            <!-- Text Panel -->
+            <!-- Text Panel
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">
@@ -270,7 +270,7 @@
                         <button type="button" class="btn btn-default">Niche</button>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
 
         </div><!--/Right Column -->
